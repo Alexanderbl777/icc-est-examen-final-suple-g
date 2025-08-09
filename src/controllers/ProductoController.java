@@ -45,7 +45,7 @@ public class ProductoController {
   public List<Producto> obtenerDestacados(List<Producto> lista){
     List<Producto> nueva = new ArrayList<>();
     for (Producto p : lista) {
-      if(p.getCatidadPreciosRepetidos()>=1){
+      if(p.getCatidadPreciosRepetidos()>1){
         nueva.add(p);
       }
     }
